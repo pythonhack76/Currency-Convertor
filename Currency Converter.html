@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Conventitore di Valuta</title>
+        
+
+        <!--CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+        <!--Javascript-->
+        <script src="Converter.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body background="18267145.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="panel panel-primary" style="margin: 85px;">
+                    <div class="panel-heading" style="font-size: 25px;">
+                        Conventitore di Valute
+                    </div>
+                    <div class="panel panel-body" style="font-size: 18px;">
+                        <div>
+                            <label for="InputBase">Moneta Corrente</label>
+                            <input type="text" class="form-control" id="Base" placeholder="Type Base Currency here....ex:USD">
+                        </div>
+                        <div>
+                            <label for="OutputCurrency">Cambi in ...</label>
+                            <input type="text" class="form-control" id="Output" placeholder="Type Output Currency here....ex:INR">
+                        </div>
+                        <div>
+                            <label for="Amount">Quanto cambi?</label>
+                            <input type="text" class="form-control" id="Amount" placeholder="Type Amount here....">
+                        </div>
+                        <div>
+                            <br>
+                            <button class="btn btn-primary btn-block" onclick="convert()">
+                                Converti!
+                            </button>
+                        </div>
+                        <br>
+                        <div>
+                            <strong>Risultato conversione monetaria : :</strong>
+                            <h3 id="Converted" style="color: blue;"></h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
